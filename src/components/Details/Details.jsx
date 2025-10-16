@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useGames } from "../GamesContext/GamesContext";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 export default function GameDetails() {
   const { game, setGame } = useGames()
@@ -92,7 +92,7 @@ export default function GameDetails() {
           {game.title}
         </h1>
         <div className="justify-center w-full items-center flex flex-col ">
-          <div className="relative w-full mb-6 h-full">
+          <div className="relative w-full mb-6 min-h-[600px] flex flex-col justify-center items-center gap-3 bg-gray-300 rounded-2xl">
             <div className="h-full min-h-full flex justify-center items-center">
               <img
                 src={game.images[current]}
@@ -142,7 +142,9 @@ export default function GameDetails() {
           </div>
           <div className="flex justify-center w-full gap-5">
             <button className="bg-red-400 px-5 py-2 w-1/2 cursor-pointer rounded-md self-end my-5 hover:bg-red-600">أطلب</button>
-            <button className="bg-gray-400 px-5 py-2 w-1/2 cursor-pointer rounded-md self-end my-5 hover:bg-red-600">كل الالعاب</button>
+            <Link to="/" className="bg-gray-400 px-5 py-2 w-1/2 cursor-pointer rounded-md self-end my-5 hover:bg-red-600 text-center">
+              كل الالعاب
+            </Link>
           </div>
         </div>
       </div>
