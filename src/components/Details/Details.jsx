@@ -82,7 +82,9 @@ export default function GameDetails() {
           </div>
           <div className="flex justify-center w-full gap-5">
             <button className="bg-red-400 px-5 py-2 w-1/2 cursor-pointer rounded-md self-end my-5 hover:bg-red-600">أطلب</button>
-            <button className="bg-gray-400 px-5 py-2 w-1/2 cursor-pointer rounded-md self-end my-5 hover:bg-red-600">كل الالعاب</button>
+            <Link to="/" className="bg-gray-400 px-5 py-2 w-1/2 cursor-pointer rounded-md self-end my-5 hover:bg-red-600 text-center">
+              كل الالعاب
+            </Link>
           </div>
         </div>
       </div>
