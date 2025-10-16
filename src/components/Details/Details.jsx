@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useGames } from "../GamesContext/GamesContext";
 import { Navigate } from "react-router-dom";
 
@@ -18,6 +18,11 @@ export default function GameDetails() {
       prev === 0 ? game.images.length - 1 : prev - 1
     );
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   if (!game.title) {
     return <Navigate to="/" replace />;
   }
