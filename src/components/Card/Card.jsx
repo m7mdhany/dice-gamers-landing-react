@@ -10,7 +10,7 @@ const Card = ({ title, img, overview, thisGame }) => {
       <img
         src={img}
         alt={title}
-        className="w-full h-80 object-cover"
+        className="w-full h-72 object-cover"
       />
       <div className="p-4 flex flex-col">
         <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>

@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer'
 function App() {
 
   return (
-    <div className='mx-10 min-h-fit h-screen'>
+    <div className='md:mx-10 mx-2 min-h-fit h-screen'>
       <BrowserRouter>
       <Header />
         <GamesProvider>
