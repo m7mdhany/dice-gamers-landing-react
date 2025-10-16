@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card';
+import logo from "../../assets/imgs/logo-inv.png"
 
 const Collection = ({ games }) => {
   console.log(games);
@@ -22,7 +23,7 @@ const Collection = ({ games }) => {
           <p dir='ltr' className="text-white text-xl">Loading ...</p>
         )}
       </div>
-      <img className='absolute opacity-5 w-full top-0 -z-10' src="/src/assets/imgs/logo-inv.png" alt="" />
+      <img className='absolute opacity-5 w-full top-0 -z-10' src={logo} alt="" />
     </div>
   );
 }

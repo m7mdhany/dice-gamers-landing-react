@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo from "../../assets/imgs/logo.png"
 const Hero = () => {
   return (
     <div className='h-96 my-10'>
@@ -10,7 +10,7 @@ const Hero = () => {
             وجهتك المثالية لألعاب الطاولة المصنوعة يدويًا بجودة عالية. سواء كنت من عشاق التحديات الاستراتيجية، المغامرات المثيرة، أو الأوقات العائلية المرحة، لدينا ما يناسبك تمامًا. اكتشف مجموعتنا المميزة من الألعاب المصنوعة من الخشب والأكريليك، المصممة خصيصًا لرفع مستوى تجربتك في اللعب.
           </p>
         </div>
-        <img className='h-full' src="/src/assets/imgs/logo.png" alt="" />
+        <img className='h-full' src={logo} alt="" />
       </div>
     </div>
   )
