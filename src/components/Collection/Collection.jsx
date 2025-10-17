@@ -6,7 +6,7 @@ const Collection = ({ games }) => {
   console.log(games);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b z-10 from-gray-800 to-gray-900 md:p-10 py-5 rounded-lg my-5 relative">
+    <div className=" bg-gradient-to-b z-10 from-gray-800 to-gray-900 md:p-10 py-5 rounded-lg my-5 relative">
       <h1 className="text-4xl font-bold text-center text-red-400 mb-10">Available Games</h1>
       <div className="flex flex-wrap gap-8 justify-center z-20">
         {games && games.length > 0 ? (

@@ -11,18 +11,21 @@ import Footer from './components/Footer/Footer'
 function App() {
 
   return (
-    <div className='md:mx-10 mx-2 min-h-fit h-screen'>
-      <BrowserRouter>
-      <Header />
-        <GamesProvider>
-          <Routes>
-            <Route path='/' element={<Home />}></Route>
-            <Route path='/details' element={<Details />}></Route>
-          </Routes>
-        </GamesProvider>
-      </BrowserRouter>
-      <Footer />
-    </div >
+    <div className='flex justify-center'>
+      <div className='md:mx-10 mx-2 min-h-fit h-screen max-w-[1450px]'>
+        <BrowserRouter>
+          <Header />
+          <GamesProvider>
+            <Routes>
+              <Route path='/' element={<Home />}></Route>
+              <Route path='/details' element={<Details />}></Route>
+            </Routes>
+          </GamesProvider>
+        </BrowserRouter>
+        <Footer />
+      </div >
+    </div>
+
   )
 }
 
