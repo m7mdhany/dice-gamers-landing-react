@@ -26,7 +26,7 @@ export default function GameDetails() {
   }
 
   return (
-    <div dir="ltr" className=" h-fit min-h-fit text-white flex flex-col items-center py-10 px-6 mb-5">
+    <div dir="ltr" className=" h-fit min-h-fit flex flex-col items-center py-10 px-6 mb-5 bg-gray-700">
       <div className="hidden md:flex justify-center w-full h-full">
         <div className="justify-center w-1/3 items-center flex flex-col ">
           <div className="relative w-full mb-6 h-full">
@@ -61,11 +61,11 @@ export default function GameDetails() {
           </div>
         </div>
 
-        <div dir="rtl" className="flex flex-col mx-10 items-center">
+        <div dir="rtl" className="flex flex-col mx-10 items-center text-white">
           <h1 className="text-4xl font-bold text-red-400 mb-8 tracking-wide">
             {game.title}
           </h1>
-          <div className=" max-w-2xl text-start text-gray-900 leading-relaxed border-t border-red-400 pt-6 flex flex-col items-end gap-5">
+          <div className=" max-w-2xl text-start leading-relaxed border-t border-red-400 pt-6 flex flex-col items-end gap-5">
             <div className=" grid gap-2">
               <p className="col-span-12 w-full font-bold text-2xl"> : عن اللعبة</p>
               <p className="col-span-12 w-full">{game.overview}</p>
@@ -150,7 +150,7 @@ export default function GameDetails() {
           </div>
         </div>
       </div>
-      <img className="absolute -z-10 opacity-10" src="/src/assets/imgs/logo.png" alt="" />
+      <img className="absolute z-10 opacity-2" src="/src/assets/imgs/logo-inv.png" alt="" />
     </div >
   );
 }

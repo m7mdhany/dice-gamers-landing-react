@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../../assets/imgs/logo.png"
 const Hero = () => {
   return (
-    <div className='md:h-96 md:my-10'>
+    <div className='md:h-96 md:my-10 text-white'>
       <div className='h-full md:flex hidden justify-center items-center gap-5 md:px-20'>
         <div className='flex flex-col items-end w-1/2 gap-10'>
           <h1 className='w-full text-end font-bold text-2xl lg:text-7xl'>DICE GAMERS</h1>

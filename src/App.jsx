@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer'
 function App() {
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center bg-gray-600'>
       <div className='md:mx-10 mx-2 min-h-fit h-screen max-w-[1450px]'>
         <BrowserRouter>
           <Header />

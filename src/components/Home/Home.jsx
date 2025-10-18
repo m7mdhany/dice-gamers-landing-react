@@ -10,7 +10,7 @@ import RequestGame from '../RequestGame/RequestGame';
 
 const Home = () => {
 
-  const { games, setGames } = useGames()
+  const { games, setGames } = useGames([])
 
   useEffect(() => {
     const fetchGames = async () => {
